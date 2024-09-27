@@ -2,7 +2,7 @@
 FROM node:18
 
 # add env
-ENV DATABASE_URL=$ENV DATABASE_URL
+ENV DATABASE_URL=env(ENV DATABASE_URL)
 
 # Set the working directory inside the container
 WORKDIR /app
