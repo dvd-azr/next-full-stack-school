@@ -1,8 +1,9 @@
 # Use Node.js as the base image
 FROM node:18
 
+# ARG DATABASE_URL
 # add env
-ENV DATABASE_URL=env(ENV DATABASE_URL)
+ENV DATABASE_URL=env(DATABASE_URL)
 
 # Set the working directory inside the container
 WORKDIR /app
