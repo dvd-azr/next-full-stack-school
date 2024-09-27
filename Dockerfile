@@ -1,6 +1,9 @@
 # Use Node.js as the base image
 FROM node:18
 
+# add env
+ENV DATABASE_URL
+
 # Set the working directory inside the container
 WORKDIR /app
 
